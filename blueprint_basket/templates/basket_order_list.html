@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Найденные билеты</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="/static/design_list.css">
+</head>
+
+<body>
+    <header class="header_style">
+        <div class="logo_position">
+            <img src="/static/logo.png" height="150px" width="150px">
+       </div>
+    </header>
+
+  <main>
+
+    {% import 'basket_utils.html' as utils %}
+
+    <div class="container">
+        <div class="col-md-12">
+            <h2>Найденные билеты</h2>
+            {% for item in items %}
+                {{ utils.render_item(item, show_form = True) }}
+            {% endfor %}
+        </div>
+    </div>
+      <p align="center">
+          <a href="{{ url_for('bp_order.order_list') }}">Вернуться к поиску рейсов</a>
+      </p>
+  </main>
+</body>
+</html>

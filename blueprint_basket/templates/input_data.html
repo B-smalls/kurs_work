@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ввод данных</title>
+    <link type="text/css" rel="stylesheet" href="/static/design_list.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header_style">
+        <div class="logo_position">
+            <img src="/static/logo.png" height="150px" width="150px">
+       </div>
+    </header>
+
+    <main>
+        <h1 align="center">Оформление билета</h1>
+        <h2 align="center">Введите полностью ФИО и паспортные данные </h2>
+        <h6 align="center">Формат ввода ФИО: Фамилия Имя Отчество(если есть)<h6>
+            <h6 align="center">Формат ввода паспортных данных: 0000 000000<h6>
+        <div align="center">
+            <form method="post" action="">
+                <label for="FullName">ФИО</label>
+                <input type="text" id="FullName" name="FullName"> <br><br>
+                 <label for="passport_data">Серия и номер паспорта</label>
+                <input type="text" name="passport_data" id="passport_data"> <br><br>
+
+                <input type="submit" class="submit" value="Купить билет">
+                </form>
+            <br><br>
+             <h2 align="center">{{ error_message }}</h2>
+        </div>
+                <p align="center">
+                    <a href="url_for('bp_order.search_flight')">Вернуться к поиску рейса</a>
+                    <br><br>
+                    <a href="url_for('menu_choice')">Вернуться в главное меню</a>
+                </p>
+    </main>
+
+</body>
+
+</html>

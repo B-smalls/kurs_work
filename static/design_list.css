@@ -1,0 +1,73 @@
+body{
+    position: static;
+    background-image: url(/static/back_start.jpg);
+    margin: 0;
+}
+
+main{
+    margin: 15px;
+}
+
+h1{
+    font-size:  xx-large;
+    color: black;
+    font-weight: bold;
+}
+
+h2{
+    font-size: x-large;
+    color: 	#6495ED;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 18pt;
+    color: 	white;
+    font-weight: bold;
+}
+
+
+label{
+    font-size: 15pt;
+    color: white;
+}
+
+input{
+    margin:2pt;
+}
+
+table{
+    border: 1pt solid;
+    width: 60%;
+}
+
+td {
+    font-family: 'Vardana';
+    font_size: 10pt;
+    color: #339fde;
+    text-aling: center;
+    border: 1pt solid;
+    border-color: black;
+}
+
+.table-title {
+    font-famile: 'Verdana';
+    font-weight: bold;
+    font-size: 12pt;
+    color: black;
+}
+
+.header_style {
+    background-color: #339fde;
+    height: 85px;
+}
+
+.logo_position {
+    position: relative;
+    left: -29px;
+    top: -33px;
+}
+
+
+
+

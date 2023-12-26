@@ -1,0 +1,33 @@
+
+{% macro render_item(item, show_form=False) %}
+    <div style="border-style: solid; border-color: black; margin: 5px">
+        <span style="color: black"><u>Город вылета:</u></span>
+        <span style="color: green"><b>{{ item['dep_city'] }}</b></span>
+
+        <span style="color: black"><u>Aэропорт вылета:</u></span>
+        <span style="color: green"><b>{{ item['name_airport_dep'] }}</b></span>
+
+        <span style="color: black"><u>Город прилета:</u></span>
+        <span style="color: green"><b>{{ item['ariv_city'] }}</b></span>
+
+        <span style="color: black"><u>Аэропорт прилета:</u></span>
+        <span style="color: green"><b>{{ item['name_airport_ariv'] }}</b></span>
+
+        <span style="color: black"><u>Дата вылета и время вылета:</u></span>
+        <span style="color: green"><b>{{ item['dep_date_time'] }}</b></span>
+
+        <span style="color: black"><u>Место:</u></span>
+        <span style="color: green"><b>{{ item['place'] }}</b></span>
+
+        <span style="color: black"><u>Цена:</u></span>
+        <span style="color: green"><b>{{ item['cost'] }}</b></span>
+    </div>
+    {% if show_form %}
+            <div>
+                <form action="" method="post">
+                    <input type="hidden" name="t_id" value="{{ item['t_id'] }}">
+                    <input type="submit" name="action" value="Оформить билет">
+                </form>
+            </div>
+        {% endif %}
+{% endmacro %}

@@ -1,0 +1,1 @@
+select * from middle_price where month_report = '$input_month' and year_report = '$input_year'

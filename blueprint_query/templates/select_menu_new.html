@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Меню запросов</title>
+    <link type="text/css" rel="stylesheet" href="/static/design_list.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header_style">
+        <div class="logo_position">
+            <img src="/static/logo.png" height="150px" width="150px">
+       </div>
+    </header>
+
+    <main>
+        <br><br>
+        <br><br>
+        <p align="center">
+            <a href="{{ url_for('bp_query.task1') }}">Найти информацию о рейсе по названию</a> <br><br>
+            <a href="{{ url_for('bp_query.task2') }}">Найти сумму проданных билетов за год</a> <br><br>
+            <a href="{{ url_for('bp_query.task3') }}">Найти информацию о проданных билетах за определенный год и месяц </a> <br><br>
+            <br><br>
+            <a href="{{ url_for('menu_choice') }}"> Нажмите для возврата на главную страницу</a>
+        </p>
+    </main>
+
+</body>
+</html>

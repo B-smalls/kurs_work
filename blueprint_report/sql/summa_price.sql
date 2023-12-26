@@ -1,0 +1,1 @@
+select * from sum_of_race where month_report = '$input_month' and year_report = '$input_year'
